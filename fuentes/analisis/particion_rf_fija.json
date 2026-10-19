@@ -1,0 +1,53 @@
+{
+  "seed": 20261017,
+  "assignment": "Una permutación aleatoria de las 20 identidades ordenadas. Primeras 12 entrenamiento, siguientes 4 validación, últimas 4 prueba. Sin buscar otras semillas.",
+  "prior_test_exposure": true,
+  "outcomes_used_to_assign": false,
+  "clinical_validation": false,
+  "train": [
+    "chb02",
+    "chb03",
+    "chb06",
+    "chb08",
+    "chb11",
+    "chb12",
+    "chb13",
+    "chb15",
+    "chb17",
+    "chb18",
+    "chb20",
+    "chb22"
+  ],
+  "validation": [
+    "chb05",
+    "chb09",
+    "chb14",
+    "chb23"
+  ],
+  "test": [
+    "chb01",
+    "chb07",
+    "chb10",
+    "chb16"
+  ],
+  "counts": {
+    "train": {
+      "people": 12,
+      "edf": 359,
+      "events": 113,
+      "recorded_hours": 404.74694444444447
+    },
+    "validation": {
+      "people": 4,
+      "edf": 93,
+      "events": 24,
+      "recorded_hours": 159.43277777777777
+    },
+    "test": {
+      "people": 4,
+      "edf": 138,
+      "events": 31,
+      "recorded_hours": 209.45805555555555
+    }
+  }
+}

@@ -11,6 +11,7 @@ las detectadas fue 11 s. El resultado es exploratorio y no acredita utilidad cl�
 
 - `Colab_Detector_EEG.ipynb` descarga y verifica el código, copia los EDF necesarios desde Drive y ejecuta las etapas en orden.
 - `codigo_congelado.zip` contiene las 22 entradas originales del paquete científico y sus huellas. Incluye configuración, inventario, anotaciones y particiones. El cuaderno verifica su SHA-256 antes de extraerlo.
+- `fuentes/` permite leer esas mismas fuentes directamente en GitHub. Sus archivos son idénticos a los del ZIP. El cuaderno ejecuta el paquete comprobado, no una variante editada.
 - `METODO.md` explica datos, entrenamiento, elección de época y evaluación.
 - `resultados/` conserva recuentos históricos por ronda, crisis y duración. No contiene señales EEG.
 - `verificar_entrega.py` comprueba las huellas, las cinco divisiones y los recuentos sin entrenar.

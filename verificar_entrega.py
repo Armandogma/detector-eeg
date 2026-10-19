@@ -5,6 +5,8 @@ manifest=json.loads((p/'SHA256SUMS.json').read_text())
 for name,digest in manifest.items():
     assert hashlib.sha256((p/name).read_bytes()).hexdigest()==digest,name
 with zipfile.ZipFile(p/'codigo_congelado.zip') as z:
+    for name in z.namelist():
+        assert (p/'fuentes'/name).read_bytes()==z.read(name),name
     plan=json.loads(z.read('analisis/particiones_breves_cv.json'))
     people=[]
     for fold in plan['folds']:

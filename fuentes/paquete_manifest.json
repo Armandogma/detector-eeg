@@ -1,0 +1,347 @@
+{
+  "family": "tcn_gru_breves_cv_v1",
+  "people": 20,
+  "edf": 590,
+  "events": 168,
+  "plan": {
+    "seed_source": 20261017,
+    "assignment": "Cinco grupos de cuatro personas. Orden fijo: test+validation+train de particion_rf_fija.json, que deriva de una sola permutacion previa. Sin buscar semillas ni usar desempeno. Test grupo i, validacion grupo i+1 circular y entrenamiento los otros tres. Reutilizado sin reordenar identidades después de ver resultados. Exposición histórica declarada.",
+    "people": [
+      "chb01",
+      "chb07",
+      "chb10",
+      "chb16",
+      "chb05",
+      "chb09",
+      "chb14",
+      "chb23",
+      "chb02",
+      "chb03",
+      "chb06",
+      "chb08",
+      "chb11",
+      "chb12",
+      "chb13",
+      "chb15",
+      "chb17",
+      "chb18",
+      "chb20",
+      "chb22"
+    ],
+    "groups": [
+      [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16"
+      ],
+      [
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23"
+      ],
+      [
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08"
+      ],
+      [
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15"
+      ],
+      [
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ]
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "train": [
+          "chb02",
+          "chb03",
+          "chb06",
+          "chb08",
+          "chb11",
+          "chb12",
+          "chb13",
+          "chb15",
+          "chb17",
+          "chb18",
+          "chb20",
+          "chb22"
+        ],
+        "validation": [
+          "chb05",
+          "chb09",
+          "chb14",
+          "chb23"
+        ],
+        "test": [
+          "chb01",
+          "chb07",
+          "chb10",
+          "chb16"
+        ],
+        "counts": {
+          "train": {
+            "people": 12,
+            "edf": 359,
+            "events": 113,
+            "recorded_hours": 404.74694444444447
+          },
+          "validation": {
+            "people": 4,
+            "edf": 93,
+            "events": 24,
+            "recorded_hours": 159.43277777777777
+          },
+          "test": {
+            "people": 4,
+            "edf": 138,
+            "events": 31,
+            "recorded_hours": 209.45805555555555
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train": [
+          "chb01",
+          "chb07",
+          "chb10",
+          "chb16",
+          "chb11",
+          "chb12",
+          "chb13",
+          "chb15",
+          "chb17",
+          "chb18",
+          "chb20",
+          "chb22"
+        ],
+        "validation": [
+          "chb02",
+          "chb03",
+          "chb06",
+          "chb08"
+        ],
+        "test": [
+          "chb05",
+          "chb09",
+          "chb14",
+          "chb23"
+        ],
+        "counts": {
+          "train": {
+            "people": 12,
+            "edf": 385,
+            "events": 119,
+            "recorded_hours": 454.19555555555553
+          },
+          "validation": {
+            "people": 4,
+            "edf": 112,
+            "events": 25,
+            "recorded_hours": 160.00944444444445
+          },
+          "test": {
+            "people": 4,
+            "edf": 93,
+            "events": 24,
+            "recorded_hours": 159.43277777777777
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train": [
+          "chb01",
+          "chb07",
+          "chb10",
+          "chb16",
+          "chb05",
+          "chb09",
+          "chb14",
+          "chb23",
+          "chb17",
+          "chb18",
+          "chb20",
+          "chb22"
+        ],
+        "validation": [
+          "chb11",
+          "chb12",
+          "chb13",
+          "chb15"
+        ],
+        "test": [
+          "chb02",
+          "chb03",
+          "chb06",
+          "chb08"
+        ],
+        "counts": {
+          "train": {
+            "people": 12,
+            "edf": 348,
+            "events": 75,
+            "recorded_hours": 484.13694444444445
+          },
+          "validation": {
+            "people": 4,
+            "edf": 130,
+            "events": 68,
+            "recorded_hours": 129.49138888888888
+          },
+          "test": {
+            "people": 4,
+            "edf": 112,
+            "events": 25,
+            "recorded_hours": 160.00944444444445
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "train": [
+          "chb01",
+          "chb07",
+          "chb10",
+          "chb16",
+          "chb05",
+          "chb09",
+          "chb14",
+          "chb23",
+          "chb02",
+          "chb03",
+          "chb06",
+          "chb08"
+        ],
+        "validation": [
+          "chb17",
+          "chb18",
+          "chb20",
+          "chb22"
+        ],
+        "test": [
+          "chb11",
+          "chb12",
+          "chb13",
+          "chb15"
+        ],
+        "counts": {
+          "train": {
+            "people": 12,
+            "edf": 343,
+            "events": 80,
+            "recorded_hours": 528.9002777777778
+          },
+          "validation": {
+            "people": 4,
+            "edf": 117,
+            "events": 20,
+            "recorded_hours": 115.2461111111111
+          },
+          "test": {
+            "people": 4,
+            "edf": 130,
+            "events": 68,
+            "recorded_hours": 129.49138888888888
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "train": [
+          "chb05",
+          "chb09",
+          "chb14",
+          "chb23",
+          "chb02",
+          "chb03",
+          "chb06",
+          "chb08",
+          "chb11",
+          "chb12",
+          "chb13",
+          "chb15"
+        ],
+        "validation": [
+          "chb01",
+          "chb07",
+          "chb10",
+          "chb16"
+        ],
+        "test": [
+          "chb17",
+          "chb18",
+          "chb20",
+          "chb22"
+        ],
+        "counts": {
+          "train": {
+            "people": 12,
+            "edf": 335,
+            "events": 117,
+            "recorded_hours": 448.93361111111113
+          },
+          "validation": {
+            "people": 4,
+            "edf": 138,
+            "events": 31,
+            "recorded_hours": 209.45805555555555
+          },
+          "test": {
+            "people": 4,
+            "edf": 117,
+            "events": 20,
+            "recorded_hours": 115.2461111111111
+          }
+        }
+      }
+    ],
+    "prior_test_exposure": true,
+    "clinical_validation": false,
+    "inner_validation": "Una reserva interna por ronda, no busqueda anidada exhaustiva.",
+    "all_tested_once": true,
+    "protocol": "tcn_gru_breves_cv_v1"
+  },
+  "data_included": false,
+  "old_results_required": false,
+  "planned_cache_bytes": {
+    "shared_features": 9619174656
+  },
+  "files": {
+    "codigo/rutas.py": "cf68544d93c2b6ca755d34ba720976e06f2bc60792fbf86d6ddea5952aa1f460",
+    "codigo/dataset_causal.py": "e23278d22fbdae015d84546d0e7b4dc52294ed03fb932f17ccd7994e5a4de7c5",
+    "codigo/ajustes_modelo.py": "abfe0f433b29d82136c7ff0e12b4b4242b221119a4d4bb5b8cccb3b0a4cd2723",
+    "codigo/modelo_cnn_bilstm.py": "1dd845a85f0c58f033377445560d1910cf1f554dcf3b273e7596850c625614ed",
+    "codigo/modelo_atencion.py": "370087db6310e38ee89a3f5845637b5e55e2ffd6672e672ed564b6d21db71232",
+    "codigo/evaluador_continuo.py": "83f6637c0986824b120b7e02aecd8c64dbb4a90ff4f31d30bbbebf36dd5387e4",
+    "codigo/modelo_memoria.py": "fb4dbae808e773fd8f807701936069149294c28e9ded54441413c78602a7f7c3",
+    "codigo/modelo_espectro.py": "c9ac74d1d6e3ae915da688fdcbe22cb56793223d43ed97cba602bac3172f8320",
+    "codigo/modelo_relativo.py": "865f0876b0632f42d8095c3aa00b10b90c03c5227e5ac80519cab750305dd1ff",
+    "codigo/eventos_relativos.py": "7b82f1470f2e1931a7574a67a8c8abdeecbe135d483f7d6eef4e44131f39965a",
+    "codigo/modelo_adaptativo.py": "c09767ec5c787b225f1c9ee0c002342eeee3f2d2baa1c63a9b22a2566c79af28",
+    "codigo/colab_adaptativo.py": "819e71a2b5c95b0173f1b060e32a5d3f965f05073db98b9c08bc937f07dbdb9e",
+    "codigo/modelo_breves.py": "511cb82a321c7ba40252476997207ab667d4f05a5bd786116ea06554e72dcedb",
+    "codigo/colab_breves_cv.py": "1653a38d25a6c8b24a794948547209de8392f9b6c99eccbbe2426f9a5f5edf22",
+    "codigo/configuracion_breves_cv.json": "9d4df290dd83c84e5e2361151ac93f7421737c88123fb2a32b082de52c9fd585",
+    "analisis/manifiesto_dataset.json": "0bd1de24595105204c27b6c3324f8894e5878834d581b8ef42f9a81e9b2a855b",
+    "analisis/cohorte_pediatrica.json": "cd9e19c20e4b70916f54a9244c025903d87e7859a436e5627534680470e4b4dc",
+    "analisis/particion_rf_fija.json": "2c3fd6075e5723965bb36b8d6b25422be9e51b296e598c4b743386e0abf4849e",
+    "analisis/particiones_breves_cv.json": "dd0c013fbc16f376b405f51dc4944863c114e167c9531babdd1f21c876d45efa",
+    "analisis/calidad_modelo.json": "a8eee576e8c14e6f799b41159291e70cdce628be7efedf945c9e6d2aee27f5aa",
+    "LEEME.md": "673270e020c4cbab9fcade1ed05e85009367b34aedd2e165f4205da97d575f4a"
+  },
+  "software_revision": "pilot_cudnn_train_mode_1",
+  "parent_package_sha256": "5adef4e3b8720319cea6a418ad79d2786b477f5ebc376f9f8accdcb599265d22",
+  "correction": "Pilot TRAIN mode before cuDNN backward; eval for final measurement. No scientific parameter changes."
+}

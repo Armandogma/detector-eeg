@@ -1,0 +1,158 @@
+{
+  "protocol": "tcn_gru_breves_cv_v1",
+  "seed": 2067,
+  "variants": [
+    "adaptativo"
+  ],
+  "prior_test_exposure": true,
+  "clinical_validation": false,
+  "fs": 256,
+  "window_seconds": 4,
+  "advance_seconds": 1,
+  "filter_design_order": 4,
+  "filter_low_hz": 0.5,
+  "filter_high_hz": 40.0,
+  "filter_initial_state": "zero; reset each EDF; retain state across blocks",
+  "preprocessing_block_seconds": 60,
+  "normalization_epsilon_uv": 1e-06,
+  "crop_margin_seconds": 60,
+  "normalization": "4-second features retain previous causal extractor. Additional 2-second features reference only earlier complete windows of the same EDF, with deterministic 0/1 initialization. No labels or pooled validation/test statistics.",
+  "architecture": "Own 4-second TCN-GRU plus 2-second instantaneous shared-channel head. Learned logit fusion with auxiliary head losses. Integrated hypothesis, not an ablation or efficacy claim.",
+  "adaptive": {
+    "n_features": 96,
+    "baseline_window_seconds": 180,
+    "baseline_gap_seconds": 4,
+    "minimum_baseline_std": 0.05,
+    "inference_stride": 12,
+    "hard_mining_epochs": [
+      4,
+      8,
+      12
+    ],
+    "hard_mining_threshold": 0.35
+  },
+  "training": {
+    "batch_size": 36,
+    "persons_per_batch": 12,
+    "batches_per_epoch": 200,
+    "max_epochs": 15,
+    "minimum_epochs": 15,
+    "patience": 6,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.001,
+    "dropout": 0.25,
+    "gradient_clip": 1.0,
+    "selection": "Within each fold only: acceptance, macro event sensitivity, pooled event sensitivity, macro AP, fewer FA/h, less alarm time; earliest epoch on exact tie. Save every epoch validation probabilities for audit.",
+    "epoch_sequences": 7200,
+    "selection_start_epoch": 1
+  },
+  "inference_batch_size": 64,
+  "validation_false_alarms_budget_per_hour": 1.0,
+  "validation_max_alarm_time_fraction": 0.05,
+  "validation_min_pooled_sensitivity": 0.7,
+  "validation_min_macro_sensitivity": 0.6,
+  "validation_no_zero_person": true,
+  "validation_threshold_quantiles": [
+    0.5,
+    0.75,
+    0.9,
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.999,
+    1.0
+  ],
+  "selection": "Select validation operating point under frozen numeric acceptance criteria (pooled >= 70%, macro >= 60%, no zero-detection person, FA/h <= 1.0, alarm time <= 5%). Both one-to-one positive overlap and strict onset-inside-seizure are reported. Single test evaluation only if validation accepts.",
+  "thresholds": [
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.74,
+    0.78,
+    0.82,
+    0.84,
+    0.86,
+    0.88,
+    0.9,
+    0.92,
+    0.94,
+    0.96,
+    0.98,
+    0.99,
+    0.995,
+    1.000001
+  ],
+  "rules": [
+    {
+      "smooth_seconds": 1,
+      "open_steps": 2,
+      "close_steps": 3,
+      "close_ratio": 0.85
+    },
+    {
+      "smooth_seconds": 3,
+      "open_steps": 2,
+      "close_steps": 3,
+      "close_ratio": 0.85
+    },
+    {
+      "smooth_seconds": 3,
+      "open_steps": 3,
+      "close_steps": 4,
+      "close_ratio": 0.85
+    },
+    {
+      "smooth_seconds": 5,
+      "open_steps": 3,
+      "close_steps": 4,
+      "close_ratio": 0.85
+    }
+  ],
+  "test_policy": "Freeze all five models and validation-selected rules before any outer test. Evaluate ALL folds including validation failures once. No selection/exclusion from test.",
+  "performance": {
+    "ram_cache_gib": 24,
+    "reserve_ram_gib": 8,
+    "prepare_workers": 2,
+    "workers": 0,
+    "mixed_precision": false,
+    "tf32": false
+  },
+  "sequence_steps": 24,
+  "sequence_policy": "24 acquired scores, 1s advance, overlapping inference stride12, state resets per block/EDF; no mandatory wait24s for first output. Fixed-grid causal batching with prefix invariance.",
+  "pilot": {
+    "steps": 60,
+    "learning_rate": 0.001,
+    "maximum_final_loss_ratio": 0.8,
+    "scope": "One fixed TRAIN batch; dropout off; weights discarded. Must decrease focal asymmetric BCE at least 20% before long run."
+  },
+  "event_scoring": "One-to-one positive overlap, zero tolerance, no merge/split; onset-inside comparison and full alarm burden always reported.",
+  "hypothesis": "Brief-event hypothesis: 2s+4s features, fast instantaneous head, event-balanced TRAIN sampling and twofold weight on the first four positive seconds. CV measures stability separately; no promised gain.",
+  "brief": {
+    "onset_seconds": 4,
+    "onset_sampling_fraction": 0.5,
+    "onset_loss_weight": 2.0,
+    "hard_per_person": 300,
+    "auxiliary_weights": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "full_training_background": true
+  },
+  "cv": {
+    "folds": 5,
+    "train_people": 12,
+    "validation_people": 4,
+    "test_people": 4,
+    "all_models_frozen_before_any_test": true,
+    "report_all_folds": true,
+    "prior_test_exposure": true,
+    "smote": false
+  }
+}

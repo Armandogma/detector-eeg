@@ -1,0 +1,310 @@
+{
+  "seed_source": 20261017,
+  "assignment": "Cinco grupos de cuatro personas. Orden fijo: test+validation+train de particion_rf_fija.json, que deriva de una sola permutacion previa. Sin buscar semillas ni usar desempeno. Test grupo i, validacion grupo i+1 circular y entrenamiento los otros tres. Reutilizado sin reordenar identidades después de ver resultados. Exposición histórica declarada.",
+  "people": [
+    "chb01",
+    "chb07",
+    "chb10",
+    "chb16",
+    "chb05",
+    "chb09",
+    "chb14",
+    "chb23",
+    "chb02",
+    "chb03",
+    "chb06",
+    "chb08",
+    "chb11",
+    "chb12",
+    "chb13",
+    "chb15",
+    "chb17",
+    "chb18",
+    "chb20",
+    "chb22"
+  ],
+  "groups": [
+    [
+      "chb01",
+      "chb07",
+      "chb10",
+      "chb16"
+    ],
+    [
+      "chb05",
+      "chb09",
+      "chb14",
+      "chb23"
+    ],
+    [
+      "chb02",
+      "chb03",
+      "chb06",
+      "chb08"
+    ],
+    [
+      "chb11",
+      "chb12",
+      "chb13",
+      "chb15"
+    ],
+    [
+      "chb17",
+      "chb18",
+      "chb20",
+      "chb22"
+    ]
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train": [
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08",
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15",
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ],
+      "validation": [
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23"
+      ],
+      "test": [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16"
+      ],
+      "counts": {
+        "train": {
+          "people": 12,
+          "edf": 359,
+          "events": 113,
+          "recorded_hours": 404.74694444444447
+        },
+        "validation": {
+          "people": 4,
+          "edf": 93,
+          "events": 24,
+          "recorded_hours": 159.43277777777777
+        },
+        "test": {
+          "people": 4,
+          "edf": 138,
+          "events": 31,
+          "recorded_hours": 209.45805555555555
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train": [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16",
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15",
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ],
+      "validation": [
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08"
+      ],
+      "test": [
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23"
+      ],
+      "counts": {
+        "train": {
+          "people": 12,
+          "edf": 385,
+          "events": 119,
+          "recorded_hours": 454.19555555555553
+        },
+        "validation": {
+          "people": 4,
+          "edf": 112,
+          "events": 25,
+          "recorded_hours": 160.00944444444445
+        },
+        "test": {
+          "people": 4,
+          "edf": 93,
+          "events": 24,
+          "recorded_hours": 159.43277777777777
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train": [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16",
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23",
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ],
+      "validation": [
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15"
+      ],
+      "test": [
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08"
+      ],
+      "counts": {
+        "train": {
+          "people": 12,
+          "edf": 348,
+          "events": 75,
+          "recorded_hours": 484.13694444444445
+        },
+        "validation": {
+          "people": 4,
+          "edf": 130,
+          "events": 68,
+          "recorded_hours": 129.49138888888888
+        },
+        "test": {
+          "people": 4,
+          "edf": 112,
+          "events": 25,
+          "recorded_hours": 160.00944444444445
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train": [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16",
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23",
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08"
+      ],
+      "validation": [
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ],
+      "test": [
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15"
+      ],
+      "counts": {
+        "train": {
+          "people": 12,
+          "edf": 343,
+          "events": 80,
+          "recorded_hours": 528.9002777777778
+        },
+        "validation": {
+          "people": 4,
+          "edf": 117,
+          "events": 20,
+          "recorded_hours": 115.2461111111111
+        },
+        "test": {
+          "people": 4,
+          "edf": 130,
+          "events": 68,
+          "recorded_hours": 129.49138888888888
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "train": [
+        "chb05",
+        "chb09",
+        "chb14",
+        "chb23",
+        "chb02",
+        "chb03",
+        "chb06",
+        "chb08",
+        "chb11",
+        "chb12",
+        "chb13",
+        "chb15"
+      ],
+      "validation": [
+        "chb01",
+        "chb07",
+        "chb10",
+        "chb16"
+      ],
+      "test": [
+        "chb17",
+        "chb18",
+        "chb20",
+        "chb22"
+      ],
+      "counts": {
+        "train": {
+          "people": 12,
+          "edf": 335,
+          "events": 117,
+          "recorded_hours": 448.93361111111113
+        },
+        "validation": {
+          "people": 4,
+          "edf": 138,
+          "events": 31,
+          "recorded_hours": 209.45805555555555
+        },
+        "test": {
+          "people": 4,
+          "edf": 117,
+          "events": 20,
+          "recorded_hours": 115.2461111111111
+        }
+      }
+    }
+  ],
+  "prior_test_exposure": true,
+  "clinical_validation": false,
+  "inner_validation": "Una reserva interna por ronda, no busqueda anidada exhaustiva.",
+  "all_tested_once": true,
+  "protocol": "tcn_gru_breves_cv_v1"
+}

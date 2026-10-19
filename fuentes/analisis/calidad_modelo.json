@@ -1,0 +1,148 @@
+{
+  "rule": {
+    "candidate": "Indicador previo de algún canal plano en bloque de hasta 10 s",
+    "exclusion": "Todas las 18 derivaciones calibradas exactamente constantes durante el bloque completo",
+    "amplitude_rejection": false,
+    "patient_rejection": false,
+    "apply_to": "Solo muestreo de entrenamiento; validación y prueba completas",
+    "limitation": "Cribado conservador de candidatos previos, no prevalencia clínica de ruido"
+  },
+  "provenance": {
+    "manifest_sha256": "0bd1de24595105204c27b6c3324f8894e5878834d581b8ef42f9a81e9b2a855b",
+    "script_sha256": "e62cf1dd89a85a7403163a239101e555513c362781ec50a1ae3ed74ee56e8f4d"
+  },
+  "measurement_hashes": {
+    "mediciones/chb01__chb01_42.npz": "b5f5d8310d6d3d4eccf4103d5f98b723fd4e75ac7a35d119847e6a8286a99b31",
+    "mediciones/chb04__chb04_05.npz": "850a6b3128a6d04f5e47a7a716a0152300f676cf0ccd4601fb94fefd924ce520",
+    "mediciones/chb04__chb04_12.npz": "a2c56cfd5aa4e4b9111812fd1df0505085956df880b4c220192407cf5bb93685",
+    "mediciones/chb04__chb04_18.npz": "9b3380940c58bb24ebbce0e37671d5ba53d826e36fedffafb896f0c70ef58461",
+    "mediciones/chb07__chb07_05.npz": "cc083d911969b2dd93bf364bfc62a5acc090279e2143c12e948adcc7cfda127c",
+    "mediciones/chb07__chb07_19.npz": "a2b0fa620ae6ae66355d67e82d0d8f56b0ac902ec3d94a5802fa81a2bbc13d4f",
+    "mediciones/chb09__chb09_13.npz": "ab3678be98bc6d2e2a31bf8a05cf71a1b265724dce912cdb2188de254b40f0ec",
+    "mediciones/chb09__chb09_14.npz": "82f4c83f94093eeff47f2911d7686fccb8059d3c1452e3c97f7aa112acb2b7b9",
+    "mediciones/chb17__chb17b_69.npz": "7307b5a1286098769d7201723cfe8ee7caaaa39ac6472cc19382de145e6f72c6",
+    "mediciones/chb22__chb22_11.npz": "61c36d3050ada8561acfe90b6d7c67fcd3d4d19829a4e3be842a08a70a8705a3"
+  },
+  "eligible_records": 673,
+  "candidate_blocks": 226,
+  "candidate_seconds": 2260.0,
+  "records": [
+    {
+      "path": "chb01/chb01_42.edf",
+      "person": "chb01",
+      "candidate_blocks": 3,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 9,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb04/chb04_05.edf",
+      "person": "chb04",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 1,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb04/chb04_12.edf",
+      "person": "chb04",
+      "candidate_blocks": 2,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 2,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb04/chb04_18.edf",
+      "person": "chb04",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 1,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb07/chb07_05.edf",
+      "person": "chb07",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 2,
+      "exact_flat_channels_max": 2,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb07/chb07_19.edf",
+      "person": "chb07",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 18,
+      "exact_flat_channels_max": 18,
+      "unusable_intervals": [
+        [
+          2350.0,
+          2360.0
+        ]
+      ],
+      "unusable_seconds": 10.0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb09/chb09_13.edf",
+      "person": "chb09",
+      "candidate_blocks": 2,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 1,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb09/chb09_14.edf",
+      "person": "chb09",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 18,
+      "exact_flat_channels_max": 18,
+      "unusable_intervals": [
+        [
+          4790.0,
+          4800.0
+        ]
+      ],
+      "unusable_seconds": 10.0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb17/chb17b_69.edf",
+      "person": "chb17",
+      "candidate_blocks": 213,
+      "exact_flat_channels_min": 18,
+      "exact_flat_channels_max": 18,
+      "unusable_intervals": [
+        [
+          1470.0,
+          3600
+        ]
+      ],
+      "unusable_seconds": 2130.0,
+      "annotated_ictal_overlap_seconds": 0
+    },
+    {
+      "path": "chb22/chb22_11.edf",
+      "person": "chb22",
+      "candidate_blocks": 1,
+      "exact_flat_channels_min": 1,
+      "exact_flat_channels_max": 1,
+      "unusable_intervals": [],
+      "unusable_seconds": 0,
+      "annotated_ictal_overlap_seconds": 0
+    }
+  ],
+  "total_unusable_seconds": 2150.0,
+  "annotated_ictal_overlap_seconds": 0
+}
