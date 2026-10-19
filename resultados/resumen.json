@@ -1,0 +1,64 @@
+{
+  "family": "tcn_gru_breves_cv_v1",
+  "revision": "pilot_cudnn_train_mode_1",
+  "historical_result": true,
+  "training_rerun_for_publication": false,
+  "people": 20,
+  "edf": 590,
+  "seizures": 168,
+  "total": {
+    "events": 168,
+    "partial_events": 0,
+    "detected": 114,
+    "false_alarms": 937,
+    "alarms": 1051,
+    "nonictal_seconds": 2773097.0,
+    "evaluated_seconds": 2783326.0,
+    "recorded_seconds": 2785096.0,
+    "alarm_seconds": 14269.0,
+    "excluded_known_events": 0,
+    "excluded_records": 0,
+    "unknown_annotation_records": 0,
+    "sensitivity": 0.6785714285714286,
+    "event_precision": 0.10846812559467174,
+    "event_f1": 0.18703855619360132,
+    "false_alarms_per_hour": 1.2164017342343234,
+    "coverage": 0.9993644743305078,
+    "time_under_alarm": 0.005126600333557765,
+    "delay_median": 11.0,
+    "delay_q1": 7.25,
+    "delay_q3": 19.0
+  },
+  "macro_AUROC": 0.9201970404279747,
+  "macro_AP": 0.4136099442942192,
+  "duration_groups": [
+    {
+      "duracion": "Hasta 10 s",
+      "crisis": 10,
+      "detectadas": 2,
+      "perdidas": 8,
+      "sensibilidad": 0.2
+    },
+    {
+      "duracion": "Más de 10 y hasta 30 s",
+      "crisis": 45,
+      "detectadas": 16,
+      "perdidas": 29,
+      "sensibilidad": 0.35555555555555557
+    },
+    {
+      "duracion": "Más de 30 s",
+      "crisis": 113,
+      "detectadas": 96,
+      "perdidas": 17,
+      "sensibilidad": 0.8495575221238938
+    }
+  ],
+  "limitations": [
+    "Retrospective model preference after test results.",
+    "Historical exposure to validation and test.",
+    "Not clinical validation.",
+    "Current weights from a recovered backup have a different identity from the original diagnostic archive although shared predictions match.",
+    "No complete forward over all EEG reproduced locally."
+  ]
+}

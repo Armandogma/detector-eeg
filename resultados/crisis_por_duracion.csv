@@ -1,0 +1,4 @@
+duracion,crisis,detectadas,perdidas,sensibilidad
+Hasta 10 s,10,2,8,0.2
+Más de 10 y hasta 30 s,45,16,29,0.35555555555555557
+Más de 30 s,113,96,17,0.8495575221238938

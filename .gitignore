@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+*.edf
+*.edf.seizures
+*.npy
+*.npz
+*.pt
+preparados/
+avance.zip
+diagnostico.zip

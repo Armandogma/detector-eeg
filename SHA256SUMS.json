@@ -1,0 +1,12 @@
+{
+  ".gitignore": "aeca1ff1cade25cef4e548c13aa6aa78d872bfe8949e041f9c5665eaadb3c80e",
+  "codigo_congelado.zip": "0c5e937b18bfcd8c5359d3dffec3b555173f08fdf0d6c884817437dc00d1f63c",
+  "Colab_Detector_EEG.ipynb": "0318904f6cad6d07bb3b9d87d25ff0e3416d440f5958eafbb5ec39fcd774e4dd",
+  "METODO.md": "24dbb5026582659c54fe1c8b23cdd412379c7bf436271b2c280156d9ed29191b",
+  "README.md": "fc7ed18f75ce80dda2d3a66d996bbe5a9cc5d27d8a9355e4e3bc599c025a0ea3",
+  "verificar_entrega.py": "8f381fef4d1332e24d4d39a69a735b7b1aa9b3cf53bb342dfc8b4c2b0294e730",
+  "resultados/breves_cv_eventos_prueba.csv": "522f8137efa77a0cc9bc2303ba401c0d2b0fef66d4189e1cc1a2cd9b0279886f",
+  "resultados/breves_cv_rondas.csv": "005b28b66a23bb714a9ecd293b5ffc6c3981170e7371a4c095affa4924d1570e",
+  "resultados/crisis_por_duracion.csv": "3f39113d626b44525808164fb143758378c896681e5288d3b86131802e8c1231",
+  "resultados/resumen.json": "562938cac01adc229dfdad1ba5564078af35ad91e812a878d69de8a3593e43a7"
+}
