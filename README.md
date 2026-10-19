@@ -30,7 +30,3 @@ las detectadas fue 11 s. El resultado es exploratorio y no acredita utilidad cl�
 Se puede volver a ejecutar el método y verificar las tablas publicadas. El código científico del ZIP es el original, sin ajustes para mejorar cifras después de la prueba. Entrenar otra vez puede producir diferencias por entorno y GPU. El repositorio no aporta los grandes archivos de probabilidades por época ni las matrices EEG remotas. Los pesos recuperados no se distribuyen como si su identidad fuese la del diagnóstico original.
 
 La preferencia por el modelo de 114 detecciones frente al ajuste posterior de 109 se decidió tras conocer prueba. Las cinco pruebas de cada corrida se fijaron y reportaron sin seleccionar los mejores pacientes de modelos diferentes. Esto no elimina la exposición histórica a los resultados.
-
-## Alcance
-
-El detector identifica actividad durante una crisis. No predice una crisis antes de su inicio. No se debe utilizar para tomar decisiones médicas. Los PDF de los autores y los EDF originales se obtienen de sus fuentes y no se redistribuyen aquí. La publicación del repositorio no equivale a una revisión clínica independiente.
