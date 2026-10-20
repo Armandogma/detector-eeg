@@ -4,7 +4,7 @@
   "codigo_congelado.zip": "0c5e937b18bfcd8c5359d3dffec3b555173f08fdf0d6c884817437dc00d1f63c",
   "Colab_Detector_EEG.ipynb": "0318904f6cad6d07bb3b9d87d25ff0e3416d440f5958eafbb5ec39fcd774e4dd",
   "METODO.md": "24dbb5026582659c54fe1c8b23cdd412379c7bf436271b2c280156d9ed29191b",
-  "README.md": "ce6e210479413ab72b0e6acda1d1079d7ff2d6264f2303f0d61feef2d7a3e7ea",
+  "README.md": "0be870de19defb7f5a29c82771597ae3431ad565b8226e3581ab686cabebd1e9",
   "verificar_entrega.py": "2f780b0a09bf3037fe190fff1f5053f7e3a1f5238acc2ababca58a7948f2c23d",
   "fuentes/LEEME.md": "673270e020c4cbab9fcade1ed05e85009367b34aedd2e165f4205da97d575f4a",
   "fuentes/paquete_manifest.json": "ef6d8f44e3514164f1bb60824c602b761f4cd0d55877f9c05800ce36c4ce48c9",
@@ -31,5 +31,6 @@
   "fuentes/codigo/modelo_espectro.py": "c9ac74d1d6e3ae915da688fdcbe22cb56793223d43ed97cba602bac3172f8320",
   "fuentes/codigo/modelo_memoria.py": "fb4dbae808e773fd8f807701936069149294c28e9ded54441413c78602a7f7c3",
   "fuentes/codigo/modelo_relativo.py": "865f0876b0632f42d8095c3aa00b10b90c03c5227e5ac80519cab750305dd1ff",
-  "fuentes/codigo/rutas.py": "cf68544d93c2b6ca755d34ba720976e06f2bc60792fbf86d6ddea5952aa1f460"
+  "fuentes/codigo/rutas.py": "cf68544d93c2b6ca755d34ba720976e06f2bc60792fbf86d6ddea5952aa1f460",
+  "EEG_REDES.md": "79f81a33bd16b32bb3e5bd4e2eb5d4565552134e6b2c6fd86776070ba5c8d254"
 }
